@@ -1,0 +1,26 @@
+.repository-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); /* Adapta o grid conforme o tamanho da tela */
+  gap: 2rem;
+  width: 100%;
+}
+
+.no-repositories-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #8061ff;
+}
+
+.error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: red;
+}

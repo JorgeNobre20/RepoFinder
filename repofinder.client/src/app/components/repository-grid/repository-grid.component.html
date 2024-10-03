@@ -1,0 +1,17 @@
+<app-loading *ngIf="isLoading"></app-loading>
+
+<div class="repository-list" *ngIf="!isLoading && !error">
+  <div class="no-repositories-message" *ngIf="repositories.length === 0">
+    <p>Nenhum repositório encontrado</p>
+  </div>
+
+<ng-container *ngFor="let githubRepository of repositories">
+  <a [routerLink]="['/repository-details', githubRepository.owner.login, githubRepository.name]">
+    <app-repository-card [repository]="githubRepository" />
+  </a>
+</ng-container>
+
+
+<div class="error-message" *ngIf="error">
+  <p>{{ error }}</p>
+</div>

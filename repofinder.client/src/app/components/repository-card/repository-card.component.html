@@ -1,0 +1,14 @@
+<div class="repository-card" *ngIf="repository">
+  <h2>{{ repository.name }}</h2>
+  <p class="row-info"><span>Descrição:</span> {{ repository.description || 'Nenhuma descrição' }}</p>
+  <p class="row-info"><span>Linguagem:</span> {{ repository.language || 'Nenhuma linguagem' }}</p>
+  
+  <div class="card-bottom">
+    <p><span>Atualizado em</span> {{ repository.updatedAt | date: 'dd/MM/yyyy' }}</p>
+  
+    <div class="user-info">
+      <p class="user-name">{{ repository.owner.login }}</p>
+      <img [src]="repository.owner.avatarUrl" alt="Avatar do proprietário" />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<app-loading *ngIf="isLoading"></app-loading>
+
+<app-repository-card [repository]="repository" />
+
+<div class="error-message" *ngIf="error">
+  <p>{{ error }}</p>
+</div>
+
+

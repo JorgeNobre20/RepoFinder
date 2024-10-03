@@ -1,0 +1,50 @@
+﻿header {
+    background-color: #8061ff;
+    padding: 2rem 3rem;
+}
+
+header h1 {
+    font-weight: bold;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    padding: 2rem 3rem;
+}
+
+aside {
+    display: flex;
+    margin-right: 1.3rem;
+    min-width: 16rem;
+}
+
+aside ul {
+    display: flex;
+    flex-direction: column;
+}
+
+aside ul li {
+    margin-bottom: 1rem;
+}
+
+aside ul li a{
+    display: flex;
+    background: #dcdcdc;
+    padding: 0.6rem 2rem;
+    border-radius: 0.5rem;
+    color: rgb(107, 107, 107);
+    font-weight: 500;
+}
+
+aside ul li a.is-active {
+    color: white;
+    background: #8061ff;
+}
+
+section {
+    width: 100%;
+}
