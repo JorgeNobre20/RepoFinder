@@ -37,7 +37,7 @@ Este projeto é uma Web API desenvolvida com .NET Core 8 que é consumida por um
 - errors: classes que mapeiam erros na aplicação.
 - utils: classes utilitárias.
 
-## API endpoints
+## Rotas da Web API
 - GET: /api/github/repositories/{githubUsername} - Lista todos os repositórios por username
 - GET: /api/github/repositories/{githubUsername}/{githubRepositoryName} - Busca repositório por username e nome do repositório
 - GET: /api/github/repositories/search?search={searchText}&items_per_page=10&page=1 - Busca paginada de repositórios por nome
